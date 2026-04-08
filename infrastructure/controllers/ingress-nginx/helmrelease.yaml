@@ -1,5 +1,4 @@
-# infrastructure/controllers/ingress-nginx/helmrelease.yaml
-apiVersion: helm.toolkit.fluxcd.io/v2
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: ingress-nginx
@@ -9,11 +8,11 @@ spec:
   chart:
     spec:
       chart: ingress-nginx
+      version: "5.7.0" # pick a stable version
       sourceRef:
         kind: HelmRepository
         name: ingress-nginx
         namespace: flux-system
-      version: "5.7.0"
   interval: 5m
   values:
     controller:
