@@ -10,7 +10,6 @@ spec:
   retryInterval: 2m
   timeout: 5m
   sourceRef:
-    kind: ExternalArtifact
     name: apps
   path: ./prod
   prune: true
