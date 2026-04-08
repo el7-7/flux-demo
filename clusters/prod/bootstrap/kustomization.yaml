@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  path: "../../infrastructure/configs"  # must be a directory
+  path: "./infrastructure/configs"  # must be a directory
   prune: true
   sourceRef:
     kind: GitRepository
