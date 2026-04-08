@@ -1,1 +1,50 @@
+namespace: default
 
+replicaCount: 2
+appLabel: nginx-custom
+
+image:
+  repository: my-nginx-custom-org1
+  tag: "1.0"
+
+container:
+  name: nginx-custom
+  port: 80
+
+service:
+  name: org1-server
+  port: 80
+  targetPort: 80
+  portName: http
+
+resources:
+  requests:
+    cpu: 100m
+  limits:
+    cpu: 200m
+
+probes:
+  liveness:
+    path: /
+    initialDelaySeconds: 10
+    periodSeconds: 10
+  readiness:
+    path: /
+    initialDelaySeconds: 5
+    periodSeconds: 5
+
+volume:
+  mountPath: /usr/share/nginx/html/files
+  claimName: nginx
+
+persistence:
+  accessMode: ReadWriteOnce
+  size: 1Gi
+
+ingress:
+  name: org1-server-ingress
+  className: nginx
+  host: org1.test
+  path: /
+  pathType: Prefix
+  forceSslRedirect: "false"
