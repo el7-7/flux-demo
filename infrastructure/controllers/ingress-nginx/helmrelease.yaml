@@ -8,12 +8,16 @@ spec:
   releaseName: ingress-nginx
   chart:
     spec:
-      chart: ingress-nginx
-      version: "5.7.0" # pick a stable version
-      sourceRef:
-        kind: HelmRepository
-        name: ingress-nginx
-        namespace: flux-system
+      chart:
+        spec:
+          chart: ingress-nginx
+          sourceRef:
+            kind: HelmRepository
+            name: ingress-nginx
+            namespace: flux-system
+          version: "5.7.0"
+      install:
+        crds: Create
   interval: 5m
   values:
     controller:
