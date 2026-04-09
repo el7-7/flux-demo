@@ -33,7 +33,7 @@ metadata:
   name: production-website
   namespace: flux-system
 spec:
-  interval: 5m
+  interval: 1m
   path: "./apps/prod/org1"
   prune: true
   sourceRef:
