@@ -1,3 +1,15 @@
+# 1️⃣ Docker Hub secret for OCI auth
+apiVersion: v1
+kind: Secret
+metadata:
+  name: dockerhub-credentials
+  namespace: flux-system
+type: kubernetes.io/dockerconfigjson
+data:
+  .dockerconfigjson: ZHNhbXVlbHM3OmRja3JfcGF0X0EzZ3UydzYzckhNTWI4ZnlYaVZYNXdFUWNaTQ== # replace with your base64 from ~/.docker/config.json
+
+---
+# 2️⃣ HelmRepository pointing to Bitnami WordPress OCI chart
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
