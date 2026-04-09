@@ -8,9 +8,9 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: wordpress        # the chart name inside the OCI repo
+      chart: wordpress       # chart name inside the OCI registry
       sourceRef:
-        kind: OCIRepository   # must match the kind of your source
+        kind: HelmRepository
         name: bitnami-wordpress
         namespace: flux-system
       version: 19.4.1   # specify the chart version you want
