@@ -3,7 +3,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
-  name: bitnami-wordpress
+  name: wordpress
   namespace: flux-system
 spec:
   interval: 5m
