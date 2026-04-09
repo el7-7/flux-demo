@@ -8,11 +8,11 @@ spec:
   chart:
     spec:
       chart: wordpress
+      version: "*"
       sourceRef:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-      version: "*"  # pin a version
   values:
     wordpressUsername: admin
     wordpressPassword: password123
