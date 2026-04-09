@@ -8,4 +8,4 @@ spec:
   type: oci
   url: oci://registry-1.docker.io/bitnami/wordpress
   secretRef:
-    name: dockerhub-credentials
+    name: secret
