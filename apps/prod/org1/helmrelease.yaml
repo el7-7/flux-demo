@@ -13,7 +13,7 @@ spec:
         name: flux-system
         namespace: flux-system
   values:
-    namespace: default
+    namespace: org1-prod
     
     replicaCount: 2
     appLabel: nginx-custom
