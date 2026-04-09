@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: wordpress
-      version: "30.0.3"
+      version: "30.0.3"                 # latest OCI chart
       sourceRef:
         kind: OCIRepository
         name: bitnami-wordpress
