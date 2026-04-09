@@ -13,7 +13,7 @@ spec:
         kind: OCIRepository   # must match the kind of your source
         name: bitnami-wordpress
         namespace: flux-system
-      tag: sha256-7ba39da1246c9e4a9ee33093566af03d63f465ac14bb4799e3722bdc07b69db0   # specify the chart version you want
+      version: 19.4.1   # specify the chart version you want
   values:
     wordpressUsername: admin
     wordpressPassword: password123
