@@ -34,7 +34,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: "./apps/production/website"
+  path: "./apps/production/org1"
   prune: true
   sourceRef:
     kind: GitRepository
