@@ -1,17 +1,23 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: website
-  namespace: org1-prod
+  name: org1-website
+  namespace: production
 spec:
   interval: 5m
   chart:
     spec:
-      chart: ./apps/base/org1
-
-  values:
-    replicaCount: 3
-
+      chart: ./../../base/website  # path to your chart
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+        namespace: flux-system
   valuesFrom:
-    - kind: ConfigMap
-      name: website-values
+    - kind: ConfigMap     # optional
+      name: org1-values
+  values:
+    # or inline override
+    namespace: production
+    image:
+      repository: my-nginx-custom-org1
+      tag: "1.0"
