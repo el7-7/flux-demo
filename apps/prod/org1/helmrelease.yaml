@@ -10,7 +10,7 @@ spec:
     spec:
       chart: wordpress
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: wordpress
         namespace: flux-system
       version: "30.3.0"
