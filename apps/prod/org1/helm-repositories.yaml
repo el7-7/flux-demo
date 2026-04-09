@@ -1,8 +1,9 @@
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
 metadata:
-  name: bitnami
-  namespace: flux-system
+  name: bitnami-wordpress
 spec:
-  url: https://charts.bitnami.com/bitnami
-  interval: 10m
+  interval: 30m
+  url: oci://registry-1.docker.io/bitnamicharts/wordpress
+  ref:
+    semver: "latest" # First available version of the software in OCIRepository
