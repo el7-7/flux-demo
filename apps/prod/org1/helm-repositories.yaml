@@ -7,3 +7,5 @@ spec:
   interval: 10m
   type: oci
   url: oci://registry-1.docker.io/bitnami/wordpress
+  secretRef:
+    name: dockerhub-credentials
