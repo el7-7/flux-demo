@@ -1,21 +1,9 @@
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: dockerhub-credentials
-  namespace: flux-system
-type: kubernetes.io/dockerconfigjson
-data:
-  .dockerconfigjson: ewogICJhdXRocyI6IHsKICAgICJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CiAgICAgICJ1c2VybmFtZSI6ICJkc2FtdWVsczciLAogICAgICAicGFzc3dvcmQiOiAiZGNrcl9wYXRfQTNndTJ3NjNySE1NYjhmeVhpVlg1d0VRY1pNIiwKICAgICAgImF1dGgiOiAiWkhOaGJYVmxiSE0zT21SamEzSmZjR0YwWDBFelozVXlkell6Y2toTlRXSTRabmxZYVZaWU5YZEZVV05hVFE9PSIKICAgIH0KICB9Cn0K
----
-apiVersion: source.toolkit.fluxcd.io/v1
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: bitnami-wordpress
   namespace: flux-system
 spec:
   interval: 10m
-  type: oci
-  url: oci://registry-1.docker.io/bitnami/
-  secretRef:
-    name: dockerhub-credentials
+  type: helm
+  url: https://charts.bitnami.com/bitnami
