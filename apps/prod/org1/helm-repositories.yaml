@@ -1,12 +1,13 @@
 # ocirepository-dockerhub.yaml
 # OCIRepository configured to pull from Docker Hub with authentication
 apiVersion: source.toolkit.fluxcd.io/v1
-kind: OCIRepository
+kind: HelmRepository
 metadata:
   name: wordpress
   namespace: flux-system
 spec:
   interval: 5m
+  type: oci
   # Docker Hub URL format: oci://docker.io/NAMESPACE/REPOSITORY
   url: oci://docker.io/bitnamicharts/wordpress
   ref:
