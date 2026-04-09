@@ -17,7 +17,8 @@ spec:
     wordpressUsername: admin
     wordpressPassword: password123
     wordpressEmail: admin@example.com
-    wordpressBlogName: "My Blog"
+    wordpressBlogName: "My Test Site"
+    wordpressBlogDescription: "Testing Flux deployments"
 
     service:
       type: ClusterIP
