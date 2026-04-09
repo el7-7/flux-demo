@@ -8,12 +8,3 @@ spec:
   interval: 1h
   url: https://kubernetes.github.io/ingress-nginx
 ---
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
-metadata:
-  name: bitnami
-  namespace: flux-system
-spec:
-  url: https://charts.bitnami.com/bitnami
-  interval: 10m
----
