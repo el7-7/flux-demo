@@ -9,7 +9,7 @@ spec:
   interval: 5m
   type: oci
   # Docker Hub URL format: oci://docker.io/NAMESPACE/REPOSITORY
-  url: oci://docker.io/bitnamicharts/wordpress
+  url: oci://docker.io/bitnamicharts/wordpress/wordpress
   # Reference the secret containing Docker Hub credentials
   secretRef:
     name: dockerhub-credentials
