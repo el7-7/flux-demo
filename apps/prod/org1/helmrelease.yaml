@@ -8,11 +8,9 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: wordpress
-      version: "19.4.1"  # check latest version on Bitnami
-      sourceRef:
-        kind: HelmRepository
-        name: bitnami
+      chartRef:
+        kind: OCIRepository
+        name: bitnami-wordpress
         namespace: flux-system
   values:
     wordpressUsername: admin
