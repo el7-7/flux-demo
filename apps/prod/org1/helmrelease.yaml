@@ -8,9 +8,10 @@ spec:
   chart:
     spec:
       chart: wordpress
+      version: "29.12.0"
       sourceRef:
-        kind: OCIRepository
-        name: bitnami-wordpress
+        kind: HelmRepository
+        name: bitnami
         namespace: flux-system
   values:
     wordpressUsername: admin
