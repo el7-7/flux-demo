@@ -25,6 +25,6 @@ spec:
     ingress:
       enabled: true
       ingressClassName: nginx
-      hostname: wordpress.example.com
+      hostname: flux.test.com
       annotations:
         kubernetes.io/ingress.class: nginx
