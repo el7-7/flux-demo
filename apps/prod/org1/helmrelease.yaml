@@ -7,10 +7,12 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: oci://registry-1.docker.io/bitnamicharts/wordpress
-      version: 30.0.3
-      # enable OCI support
-      enableOCI: true
+      chart: wordpress
+      version: "30.0.3"
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami
+        namespace: flux-system
   values:
     wordpressUsername: admin
     wordpressPassword: password123
