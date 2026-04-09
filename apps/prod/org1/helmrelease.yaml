@@ -8,11 +8,10 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: wordpress
-      version: "30.0.3"                 # latest OCI chart
+      chart: wordpress-oci        # <--- references HelmChart
       sourceRef:
-        kind: OCIRepository
-        name: bitnami-wordpress
+        kind: HelmChart           # <--- only HelmChart, not OCIRepository
+        name: wordpress-oci
         namespace: flux-system
   values:
     wordpressUsername: admin
