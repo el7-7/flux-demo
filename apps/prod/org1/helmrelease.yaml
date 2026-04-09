@@ -8,9 +8,8 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: wordpress-oci        # <--- references HelmChart
       sourceRef:
-        kind: HelmChart           # <--- only HelmChart, not OCIRepository
+        kind: OCIRepository
         name: wordpress-oci
         namespace: flux-system
   values:
