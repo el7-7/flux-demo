@@ -5,5 +5,5 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  type: helm
+  type: default
   url: https://charts.bitnami.com/bitnami
