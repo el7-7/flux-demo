@@ -1,4 +1,4 @@
-namespace: production
+namespace: org1-prod
 
 replicaCount: 3
 
