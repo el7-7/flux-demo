@@ -13,7 +13,6 @@ spec:
         kind: HelmRepository
         name: bitnami-wordpress
         namespace: flux-system
-      version: "30.3.0"
   values:
     wordpressUsername: admin
     wordpressPassword: password123
