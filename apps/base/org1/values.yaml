@@ -1,8 +1,1 @@
-namespace: org1-prod
-replicaCount: 1
-image:
-  repository: my-nginx-custom-org1
-  tag: "1.0"
-  pullPolicy: IfNotPresent
-ingress:
-  host: example.local
+
