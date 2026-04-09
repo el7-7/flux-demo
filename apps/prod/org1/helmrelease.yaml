@@ -8,10 +8,6 @@ spec:
   chart:
     spec:
       chart: ./apps/base/org1
-      sourceRef:
-        kind: GitRepository
-        name: flux-demo
-        namespace: flux-system
 
   values:
     replicaCount: 3
