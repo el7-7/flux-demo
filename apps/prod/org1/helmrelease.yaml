@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: wordpress
-      version: "29.12.0"                 # ✅ non-OCI version
+      version: "28.1.2"                 # ✅ non-OCI version
       sourceRef:
         kind: HelmRepository
         name: bitnami
