@@ -1,3 +1,4 @@
+namespace: org1-prod
 replicaCount: 1
 image:
   repository: my-nginx-custom-org1
