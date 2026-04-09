@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 type: kubernetes.io/dockerconfigjson
 data:
-  .dockerconfigjson: ZHNhbXVlbHM3OmRja3JfcGF0X0EzZ3UydzYzckhNTWI4ZnlYaVZYNXdFUWNaTQ== # replace with your base64 from ~/.docker/config.json
+  .dockerconfigjson: ZHNhbXVlbHM3OmRja3JfcGF0X0EzZ3UydzYzckhNTWI4ZnlYaVZYNXdFUWNaTQ==
 
 ---
 # 2️⃣ HelmRepository pointing to Bitnami WordPress OCI chart
