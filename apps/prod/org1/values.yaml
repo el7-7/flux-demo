@@ -3,7 +3,9 @@ namespace: production
 replicaCount: 3
 
 image:
+  repository: my-nginx-custom-org1
   tag: "1.0"
+  pullPolicy: IfNotPresent
 
 ingress:
   host: org1.flux.test
