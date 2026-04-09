@@ -10,7 +10,7 @@ spec:
     spec:
       oci:
         image: oci://registry-1.docker.io/bitnami/wordpress
-        version: sha256-7ba39da1246c9e4a9ee33093566af03d63f465ac14bb4799e3722bdc07b69db0   # specify the chart version you want
+        tag: sha256-7ba39da1246c9e4a9ee33093566af03d63f465ac14bb4799e3722bdc07b69db0   # specify the chart version you want
   values:
     wordpressUsername: admin
     wordpressPassword: password123
