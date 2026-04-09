@@ -17,7 +17,7 @@ spec:
     wordpressUsername: admin
     wordpressPassword: password123
     wordpressEmail: admin@example.com
-    wordpressBlogName: "My Test Site"
+    wordpressBlogName: "My Test Site with Flux"
     wordpressBlogDescription: "Testing Flux deployments"
 
     service:
