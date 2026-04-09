@@ -1,1 +1,9 @@
+namespace: production
 
+replicaCount: 3
+
+image:
+  tag: v1.2.3
+
+ingress:
+  host: org1.flux.test
