@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   type: oci
-  url: oci://registry-1.docker.io/bitnami/wordpress
+  url: oci://registry-1.docker.io/bitnamicharts/wordpress
   interval: 10m
   secretRef:
     name: dockerhub-credentials
