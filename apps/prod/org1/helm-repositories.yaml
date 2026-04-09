@@ -1,15 +1,15 @@
-# # ocirepository-dockerhub.yaml
-# # OCIRepository configured to pull from Docker Hub with authentication
-# apiVersion: source.toolkit.fluxcd.io/v1
-# kind: HelmRepository
-# metadata:
-#   name: bitnami-wordpress
-#   namespace: flux-system
-# spec:
-#   interval: 5m
-#   type: oci
-#   # Docker Hub URL format: oci://docker.io/NAMESPACE/REPOSITORY
-#   url: oci://registry-1.docker.io/bitnamicharts/
-#   # Reference the secret containing Docker Hub credentials
-#   secretRef:
-#     name: dockerhub-credentials
+# ocirepository-dockerhub.yaml
+# OCIRepository configured to pull from Docker Hub with authentication
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: bitnami-wordpress
+  namespace: flux-system
+spec:
+  interval: 5m
+  type: oci
+  # Docker Hub URL format: oci://docker.io/NAMESPACE/REPOSITORY
+  url: oci://registry-1.docker.io/bitnamicharts/
+  # Reference the secret containing Docker Hub credentials
+  secretRef:
+    name: dockerhub-credentials
