@@ -14,7 +14,7 @@ spec:
         namespace: flux-system
   valuesFrom:
     - kind: ConfigMap     # optional
-      name: org1-values
+      name: values
   values:
     # or inline override
     namespace: production
