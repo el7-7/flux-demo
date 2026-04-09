@@ -7,7 +7,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      namespace: org1-prod
+      targetNamespace: org1-prod   # optional since templates use .Release.Namespace
       chart: ./apps/base/org1  # path to your chart
       sourceRef:
         kind: GitRepository
