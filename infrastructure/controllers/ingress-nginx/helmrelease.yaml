@@ -16,6 +16,6 @@ spec:
   interval: 5m
   values:
     controller:
-      replicaCount: 2
+      replicaCount: 1
       service:
         type: LoadBalancer
