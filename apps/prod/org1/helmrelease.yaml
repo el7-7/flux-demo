@@ -7,7 +7,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: ./../../base/org1  # path to your chart
+      chart: ./apps/base/org1  # path to your chart
       sourceRef:
         kind: GitRepository
         name: flux-system
