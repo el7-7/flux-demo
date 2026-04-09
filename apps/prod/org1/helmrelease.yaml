@@ -13,7 +13,7 @@ spec:
         kind: HelmRepository
         name: bitnami-wordpress
         namespace: flux-system
-      version: 19.4.1  # valid version from Bitnami repo
+      version: 19.4.0  # must match an OCI tag
   values:
     wordpressUsername: admin
     wordpressPassword: password123
