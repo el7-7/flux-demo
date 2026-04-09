@@ -4,15 +4,16 @@ metadata:
   name: wordpress
   namespace: org1-prod
 spec:
+  releaseName: wordpress
   interval: 5m
   chart:
     spec:
       chart: wordpress
-      version: "29.12.0"
+      version: "29.12.0"                 # ✅ non-OCI version
       sourceRef:
         kind: HelmRepository
         name: bitnami
-        namespace: flux-system
+        namespace: flux-system           # ✅ points to HelmRepository location
   values:
     wordpressUsername: admin
     wordpressPassword: password123
